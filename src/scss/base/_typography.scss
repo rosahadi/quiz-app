@@ -1,0 +1,23 @@
+body {
+  font-family: $ff-poppins;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $text-granite-gray;
+  margin: 0;
+}
+
+.h1 {
+  font-size: $fontSize-1;
+  color: $text-majorelle-blue;
+  margin-bottom: 3.4rem;
+}
+
+.h2 {
+  font-size: $fontSize-2;
+  color: $text-gunmetal;
+  margin-bottom: 3.4rem;
+}
+
+.choice-container {
+  font-size: $fontSize-5;
+}

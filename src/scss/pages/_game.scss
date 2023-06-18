@@ -1,0 +1,84 @@
+.choice-container {
+  background-color: $bg-white;
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  border: 1px solid $bg-majorelle-blue-alpha-5;
+  cursor: pointer;
+}
+
+.choice-container:not(:last-of-type) {
+  margin-bottom: 0.7rem;
+}
+
+.choice-container:is(:hover, :focus-visible) {
+  transform: translateY(-1px);
+  box-shadow: $shadow-2;
+}
+
+.choice-prefix {
+  background-color: $bg-majorelle-blue;
+  color: $text-white;
+  padding: 1.5rem 2.5rem;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: $bg-green;
+}
+
+.incorrect {
+  background-color: $bg-red-salsa;
+}
+
+// Hud
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid $bg-majorelle-blue;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: $bg-majorelle-blue;
+  width: 0%;
+}
+
+// Loader
+#loader {
+  border: 1.6rem solid $bg-white;
+  border-radius: 50%;
+  border-top: 1.6rem solid $bg-majorelle-blue;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

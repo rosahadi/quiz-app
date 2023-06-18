@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+  background-color: $bg-lavender-blush;
+}
+
+body {
+  box-sizing: border-box;
+  outline: none;
+  line-height: 1;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  max-width: 80rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}

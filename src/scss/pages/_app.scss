@@ -1,0 +1,47 @@
+.btn {
+  text-decoration: none;
+  font-size: $fontSize-5;
+  padding: 1rem 0;
+  width: 20rem;
+  background-color: $bg-white;
+  text-align: center;
+  border: 1px solid $text-majorelle-blue;
+  color: $text-majorelle-blue;
+  cursor: pointer;
+  transition: $transition-1;
+}
+
+.btn:not(:last-of-type) {
+  margin-bottom: 1.2rem;
+}
+
+.btn:is(:hover, :focus-visible) {
+  transform: translateY(-1px);
+  box-shadow: $shadow-2;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+// Forms
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+input {
+  margin-bottom: 1.2rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  box-shadow: $shadow-3;
+  color: $text-gunmetal;
+}
